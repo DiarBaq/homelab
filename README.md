@@ -37,6 +37,7 @@ Implementation: The cluster implements Kubernetes Headless Services (clusterIP: 
 Impact: External tunnel agents resolve and communicate directly with the underlying Pod IP. This establishes a clean, bidirectional, NAT-free path that maintains persistent UDP streams.
 
 Development Roadmap
+
 [x] Phase 1: Infrastructure Foundation
 
 Provision base operating systems.
