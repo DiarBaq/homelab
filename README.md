@@ -69,5 +69,9 @@ Implement metrics scraping via Prometheus and Grafana for traffic monitoring.
 Automate deployment updates using a GitOps workflow (ArgoCD/Flux).
 
 Deployment Configuration Standards
+
 Resource Isolation
-To ensure critical network agents are never throttled by application workloads, requests and limits are strictly enforced in the deployment manifests to guarantee CPU time:
+To ensure critical network agents are never throttled by application workloads, requests and limits are strictly enforced in the deployment manifests to guarantee CPU time.
+
+IPv4 Enforcement
+When deploying external-facing networking agents, IPv6 resolution is explicitly bypassed to prevent internal NetworkUnreachable routing loops within the virtual network:
